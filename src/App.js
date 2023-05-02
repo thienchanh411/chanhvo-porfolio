@@ -1,23 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import AboutMe from './components/AboutMe';
+import ContactMe from './components/ContactMe';
+import FabIconsBottom from './components/FabIconsBottom';
+import FabIconsLeftConner from './components/FabIconsLeft';
+import Footer from './components/Footer';
+import GeneralInfomation from './components/GeneralInfomation';
+import ListProjects from './components/ListProject';
+
+import NavigationBar from './components/NavBar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" >
+      <NavigationBar/>
+      {/* <div className="row justify-content-center align-items-center" 
+      style={{ minHeight: "90vh", background: "#F8F8F8" }}>
+        <div className="col-9 align-items-center"> */}
+          <FabIconsLeftConner />
+          <GeneralInfomation />
+          <AboutMe />
+          <ListProjects />
+          <ContactMe/>
+          <FabIconsBottom/>
+          <Footer/>
+        {/* </div>
+      </div> */}
+
     </div>
   );
 }
