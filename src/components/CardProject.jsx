@@ -83,6 +83,7 @@ const CardProject = ({project, classCard, index}) => {
         </div>
         )
     }
+    
     $(function () {
 
     

@@ -34,7 +34,7 @@ const NavigationBar = () => {
           <HashLink className="nav-link text-white" to="/">Home</HashLink>
           <HashLink className="nav-link text-white" to="/#aboutme">About</HashLink>
           <HashLink className="nav-link text-white" to="/#listprojects">Project</HashLink>
-          <HashLink className="nav-link text-white" to="testimonial">Testimonial</HashLink>
+          {/* <HashLink className="nav-link text-white" to="testimonial">Testimonial</HashLink> */}
           <HashLink className="nav-link text-white" to="/#contactme">Contact</HashLink>
           
         </Nav>

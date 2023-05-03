@@ -45,7 +45,7 @@ const ContactMe = () => {
                 
                     <div id="textContactMe" className="row mt-3">
                         <h3 className="text-center">Contact to me</h3>
-                        <p className="text-center">I am excited to connect to you. If you have any questions or just say hi,<br /> I will try my best to get back to you as soon as I can
+                        <p className="text-center">I am excited to connect to you. If you have any questions or just say hi, I will try my best to get back to you as soon as I can
                         </p>
                     </div>
 
