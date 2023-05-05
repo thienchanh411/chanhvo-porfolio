@@ -1,7 +1,7 @@
 {
   "name": "chanhvo-porfolio",
   "version": "0.1.0",
-  "homepage": "https://thienchanh411.github.io/chanhvo-porfolio",
+  "homepage": "https://thienchanh411.github.io/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
