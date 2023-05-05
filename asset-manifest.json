@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/chanhvo-portfolio/static/css/main.54bfcd29.css",
+    "main.js": "/chanhvo-portfolio/static/js/main.661acd93.js",
+    "index.html": "/chanhvo-portfolio/index.html",
+    "main.54bfcd29.css.map": "/chanhvo-portfolio/static/css/main.54bfcd29.css.map",
+    "main.661acd93.js.map": "/chanhvo-portfolio/static/js/main.661acd93.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.54bfcd29.css",
+    "static/js/main.661acd93.js"
+  ]
+}
