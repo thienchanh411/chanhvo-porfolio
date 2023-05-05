@@ -33,7 +33,7 @@ export const listProject = [
         description: "The group of 3 project is a UX design project that used Justinmind framework to design a UI of mobile application for sharing suitcases.",
         // technologies: ["React", "Node.js", "MongoDB"],
         technologies: ["FaFigma", "FaMobileAlt"],
-        linkProject: "https://github.com/thienchanh411/ChanhVo-CSIS3380-Project.git"
+        linkProject: ""
     },
     {
         projectName: "Realty Rental",
@@ -57,7 +57,7 @@ export const listProject = [
         description: "The group of 5 project is a mobile application for manage the worked hours, minimum wage, information of employees.",
         // technologies: ["React", "Node.js", "MongoDB"],
         technologies: ["DiAndroid", "FaJava", "SiFirebase"],
-        linkProject: "https://github.com/thienchanh411/ChanhVo-CSIS3380-Project.git"
+        linkProject: ""
     },
 
 ]
