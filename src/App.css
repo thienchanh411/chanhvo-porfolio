@@ -1,0 +1,688 @@
+p {
+    font-size: 120%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: Georgia, serif;
+}
+#aboutMeTxt, #projectTitleTxt, #textContactMe >h3 {
+    font-weight: bold;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* SETUP FAB ICONS */
+.fabIcons{
+    color: #ffffff;
+    padding: 8px;
+}
+
+.borderFabIcons{
+    justify-content: center;
+    align-items: center;
+    border: 1px white solid;
+    background: #2d0c2c;
+    border-radius: 50%;
+    background: "#344e41";
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.projectTypeIcon{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* GENERAL INFORMATION */
+
+#generalInformation{
+    /* max-height: 95vh; */
+    min-height: 90vh;
+    /* font-size: 100%; */
+    /* padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px; */
+}
+
+#btnGetInTouch{
+    border: 1px white solid;
+        background:linear-gradient(to left, #669999 10%, #33cccc 100%);
+        font-weight: bold;
+        color: whitesmoke;
+}
+#btnGetInTouch:hover{
+    background:linear-gradient(to left, #ccffff 10%, #99ffcc 100%);
+    color: #2f3e46;
+    transition: 0.2s;
+    
+}
+
+
+
+#imgAboutMe {
+    box-shadow: 15px 15px lightblue;
+}
+.projectDescription{
+    /* width: calc(100% +  30%); */
+    padding-left: 10px;
+    border: 1px;
+    border-radius: 5px;
+    color: white;
+    background: rgb(149, 177, 167);
+}
+
+.projectDescription p {
+    font-size: 105%;
+    float:inline-end;
+}
+
+#listLanguage div p{
+    font-size: 88%;
+    font-weight: bold;
+    /* background: rgb(19, 73, 37); */
+     color: rgb(21, 39, 27);
+}
+
+.techIcons {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 3px;
+    margin-bottom: 10px;
+    color: rgb(19, 73, 37);
+}
+
+/* GENERAL SETUP FOR CARD PROJECT */
+
+
+#cardProject{
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(243, 243, 243);
+}
+
+
+
+
+/* SETUP CARD PROJECTS AT ODD POSITION */
+
+#projectTitleTxt{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #fff3b0;
+    height: 8vh;
+}
+
+.oddProjectCard #divInfoProject{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: center;
+
+}
+.oddProjectCard .projectDescription{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.oddProjectCard .projectDescription p{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 10px 0px 10px;
+}
+
+/* SETUP CARD PROJECTS AT EVEN POSITION */
+.evenProjectCard{
+    display: flex;
+    flex-direction: row;
+}
+.evenProjectCard #divInfoProject{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    padding: 0;
+
+}
+
+.evenProjectCard #divImgProject{
+    order: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+}
+.evenProjectCard .projectDescription{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.evenProjectCard .projectDescription p{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 10px 10px 0;
+}
+
+.evenProjectCard #listLanguage{
+    justify-content: start;
+    
+}
+
+/* COVER CARD PROJECT */
+
+.cardCover {
+    background-color: rgb(36, 71, 48);
+    z-index: 5;
+    border-radius: 5px;
+}
+/* className="row row-cols-1 justify-content-center align-items-center" */
+.cardCoverGeneral {
+    background-color: #F0F0F0;
+    border-radius: 5px;
+    height: 65vh;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    /* width: 24.5vw; */
+    padding: 10px;
+    align-items: center;
+
+}
+.cardCoverGeneral h1 {
+    font-size: 175%;
+    text-align: center;
+}
+.cardCoverGeneral h4 {
+    font-size: 100%;
+    text-align: center;
+    color: whitesmoke;
+}
+.borderProjectNumber{
+    display: flex;
+    width: 5vw;
+    height: 5vw;
+    background-color: #d9b561;
+    border-radius: 50%;
+    border: 2px solid whitesmoke;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.projectNumber{
+    display: flex;
+    width: 4vw;
+    height: 4vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-weight: bold;
+    background-color: #bf9943;
+    color: whitesmoke;
+    border-radius: 50%;
+    border: 1px solid whitesmoke;
+}
+.iconProjectCard{
+    width: 3vw;
+    height: 3vw;
+    padding-top: 7px;
+    color: #383d2e;
+}
+.iconProjectCardModal{
+    width: 3vw;
+    height: 3vw;
+    padding-top: 7px;
+    color: #383d2e;
+}
+#projectDescription{
+    font-size: 100%;
+}
+#btnShowModalProject{
+    display: none;
+    border: 1px solid whitesmoke;
+}
+
+/* SEND EMAIL PART */
+
+#btnSendEmail{
+    border: 1px white solid;
+        background:linear-gradient(to right, #538181 10%, #33bebe 100%);
+        font-weight: bold;
+        color: whitesmoke;
+}
+#btnSendEmail:hover{
+    background:linear-gradient(to left, #ccffff 10%, #99ffcc 100%);
+    color: #423336;
+    transition: 0.2s;
+    
+}
+
+/* RESPONSIVE MOBILE SCREEN */
+
+@media screen and (max-width: 500px) {
+
+    #customNavbar {
+        display: none;
+        flex-direction: column;
+        /* position: relative; */
+        
+    }
+    #customNavbar .nav-link{
+        display: hidden;
+        font-size: 80%;
+        width: 100%;
+        z-index: 5
+    }
+    .navbarContainer .burgerMenuIcon{
+        color: whitesmoke;
+        width: 2rem;
+        height: 2rem;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+
+    #generalInformation{
+        max-height: 80vh;
+        min-height: 60vh;
+        font-size: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #generalInformation p{
+        font-size: 1rem;
+    }
+    #generalInformation button{
+        font-size: 1rem;
+    }
+    #generalInformation h2{
+        font-size: 1.4rem;
+    }
+
+    #fabSocialIcons{
+        display: none;
+    }
+
+    #aboutmeContainer{
+        padding-left: 15px;
+        padding-right: 15px;
+        min-height: 60vh;
+    }
+    #imgAboutMe{
+        align-self: center;
+        height: 22vh;
+    }
+    .textAboutMe {
+        padding-top: 20px;
+        font-size: 100%;
+    }
+    .techIcons{
+        width: 2rem;
+        height: 2rem;
+        margin-right: 2px;
+        padding-left: 0.5rem;
+        margin-bottom: 10px;
+        color: rgb(19, 73, 37);
+    }
+    #technologiesAbout{
+        width: 100%;
+    }
+    .techNames{
+        font-size: 80%;
+    }
+    #cardProjectContainer{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        
+    }
+    .cardCoverGeneral{
+        width: 77vw;
+        height: 97vw;
+        align-self: center;
+    }
+
+    #projectTitleTxt{
+        padding-left: 15px;
+        height: 7vh;
+        font-size: 150%;
+    }
+
+    .cardCoverGeneral h1 {
+        font-size: 200%;
+        text-align: center;
+    }
+    .cardCoverGeneral h4 {
+        font-size: 150%;
+        text-align: center;
+        color: whitesmoke;
+    }
+    .borderProjectNumber{
+        width: 8vh;
+        height: 8vh; 
+    }
+    .projectNumber{
+        display: flex;
+        width: 6vh;
+        height: 6vh;
+
+    }
+    .iconProjectCard{
+        width: 2.5rem;
+        height: 2.5rem;
+        padding-top: 7px;
+    }
+    .iconProjectCardModal{
+        width: 2.7rem;
+        height: 2.7rem;
+        padding-top: 7px;
+    }
+    #textContactMe{
+        font-size: 80%;
+    }
+    .borderFabIconsBottom {
+        height: 3rem;
+        width: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fabIconsBottom {
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 500px){
+    #customNavbar {
+        display: flex;
+        flex-direction: row;
+    }
+    .navbarContainer .burgerMenuIcon{
+        display: none;
+    }
+    #customNavbar .nav-link{
+        font-size: 90%;
+    }
+    #fabSocialIcons{
+        display: none;
+    }
+    #generalInformation{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    #aboutMeTxt{
+        padding-left: 1.5rem;
+    }
+    #imgAboutMe{
+        margin-bottom: 1rem;
+    }
+    .textAboutMe, #projectTitleTxt {
+        padding-left: 1rem;
+    }
+    .techNames {
+        padding-left: 1.5rem;
+    }
+    .techIcons{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .cardProjectContainer{
+        width: 44vw;
+        height: 60vw;
+        margin-bottom: 1rem;
+        flex-grow: 1;
+    }
+    .cardCoverGeneral{
+        width: 45vw;
+        height: 60vw;
+        margin-bottom: 1rem;
+    }
+    #listProjectsContainer{
+        padding-left: 1rem ;
+        display: flex;
+        flex-flow: row wrap;
+ 
+
+    }
+
+    .borderProjectNumber{
+        width: 8vw;
+        height: 8vw; 
+    }
+    .projectNumber{
+        display: flex;
+        width: 6vw;
+        height: 6vw;
+    }
+    .cardCoverGeneral h1 {
+        font-size: 1.7rem;
+    }
+    .cardCoverGeneral h4 {
+        font-size: 1.2rem;
+    }
+    .iconProjectCard{
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    .borderFabIconsBottom {
+        height: 3rem;
+        width: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .iconProjectCardModal{
+        width: 2.7rem;
+        height: 2.7rem;
+        padding-top: 7px;
+    }
+
+    .fabIconsBottom {
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+    }
+}
+
+/* PORTRAIT TABLETS, LANDSCAPE PHONE SCREEN */
+
+@media screen and (min-width: 765px){
+    #customNavbar .nav-link{
+        font-size: 110%;
+    }
+    /* #fabSocialIcons{
+        display: none;
+    } */
+
+    #generalInformation{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        min-height: 65vw;
+    }
+    p{
+        font-size: 140%;
+    }
+
+    #generalInformation h2{
+        font-size: 200%;
+    }
+    #aboutMeTxt{
+        padding-left: 2rem;
+    }
+    #imgAboutMe{
+        height: 30vw;
+    }
+    .techNames {
+        font-size: 120%;
+        padding-left: 2rem;
+    }
+    .techIcons{
+        width: 2.7rem;
+        height: 2.7rem;
+    }
+    .textAboutMe, #projectTitleTxt {
+        padding-left: 2rem;
+    }
+
+    #projectTitleTxt{
+        height: 10vw;
+    }
+
+    .cardCoverGeneral{
+        margin-bottom: 1.5rem;
+    }
+    #listProjectsContainer{
+        padding:0 1.30rem ;
+
+    }
+
+    .cardCoverGeneral{
+        width: 31vw;
+        height: 46vw;
+        
+    }
+    #cardProjectContainer{
+        width: 32vw;
+        height: 47vw;
+        /* flex: 1; */
+    }
+
+    .borderProjectNumber{
+        width: 9vw;
+        height: 9vw; 
+    }
+    .projectNumber{
+        width: 7vw;
+        height: 7vw;
+    }
+    .cardCoverGeneral h1 {
+        font-size: 1.8rem;
+    }
+    .cardCoverGeneral h4 {
+        font-size: 1.4rem;
+    }
+    .iconProjectCard{
+        width: 2.7rem;
+        height: 2.7rem;
+    }
+    .borderFabIconsBottom {
+        height: 3rem;
+        width: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fabIconsBottom {
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+    #textContactMe h3{
+        font-size: 200%;
+    }
+}
+
+@media screen and (min-width: 992px){
+    #fabSocialIcons{
+        display: block;
+        padding-left: 1rem;
+    }
+    .borderFabIcons {
+        width: 3.5rem;
+        height: 3.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .fabIcons {
+        width: 3.3rem;
+        height: 3.3rem;
+        display: flex;
+    }
+    #generalInformation{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        min-height: 60vw;
+    }
+    .techNames {
+        font-size: 100%;
+        padding-left: 2rem;
+    }
+    .cardCoverGeneral{
+        width: 35vw;
+        height: 50vw;
+        align-self: center;
+    }
+    .cardCoverGeneral h1 {
+        font-size: 2rem;
+    }
+    .cardCoverGeneral h4 {
+        font-size: 1.5rem;
+    }
+    .iconProjectCard{
+        width: 2.9rem;
+        height: 2.9rem;
+    }
+    #fabSocialIconsBottom{
+        display: none;
+    }
+}
+
+@media (min-width:1024px) {
+    #generalInformation{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        min-height: 45vw;
+        flex-grow: 1;
+    }
+    #aboutMeTxt{
+        font-size: 2.5rem;
+    }
+    #listProjectsContainer{
+        padding: 0 1rem;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .cardCoverGeneral{
+        width: 25vw;
+        height: 35vw;
+        
+    }
+    #cardProjectContainer{
+        width: 25vw;
+        height: 36vw;
+        flex: 1;
+    }
+    .borderProjectNumber{
+        width: 5.5vw;
+        height: 5.5vw; 
+    }
+    .projectNumber{
+        width: 4.5vw;
+        height: 4.5vw;
+    }
+    #projectTitleTxt{
+        height: 7vw;
+    }
+    .iconProjectCard{
+        width: 2.7rem;
+        height: 2.7rem;
+    }
+}
