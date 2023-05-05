@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import * as FaIcons from "react-icons/fa"
 import * as DiIcons from "react-icons/di"
 import * as SiIcons from "react-icons/si"
+import * as BsIcons from "react-icons/bs"
+import * as MdIcons from "react-icons/md"
 import {BsGithub} from "react-icons/bs"
+
 import $ from 'jquery'
 
 const CardProject = ({project, classCard, index}) => {
@@ -104,6 +107,7 @@ const CardProject = ({project, classCard, index}) => {
             $(".iconProjectCard").css({color: "#423336", transition: "0.2s"})
             $(`#borderProjectNumber${index}`).css({backgroundColor: "#bf9943",transition: "0.2s"})
             $(`#projectNumber${index}`).css({backgroundColor: "whitesmoke", color: "#423336", transition: "0.2s"})
+            $(`#iconProjectType${index}`).css({color: "white", transition: "0.2s"})
             // .animate({background: "#587e76"})
             // .animate({backgroundColor: "#FFFFFF"}, 300)
 
@@ -149,6 +153,7 @@ const CardProject = ({project, classCard, index}) => {
             $(".iconProjectCard").css({color: "#383d2e", transition: "0.2s"});
             $(".borderProjectNumber").css({backgroundColor: "#d9b561"})
             $(".projectNumber").css({backgroundColor: "#bf9943"})
+            $(`#iconProjectType${index}`).css({color: "black"})
         })
     })
     return ( 
@@ -158,7 +163,31 @@ const CardProject = ({project, classCard, index}) => {
             >
             <div className={`slidecardCover${index}`} style={{height: "30%"}}>
                 <div className="borderProjectNumber" id={`borderProjectNumber${index}`}>
-                    <p className="projectNumber" id={`projectNumber${index}`}>{index+1}</p>
+
+                    {/* <p className="projectNumber" id={`projectNumber${index}`}>{index+1}</p> */}
+                    {// eslint-disable-next-line
+                    project.projectTypeIcon.map((icon) => {
+                        if(icon.substring(0,2).toLowerCase() === "fa"){
+                            return <div key={index}>{React.createElement(FaIcons[icon], 
+                                {id: `iconProjectType${index}`, className:"projectTypeIcon"})}</div>
+                        }
+                        if(icon.substring(0,2).toLowerCase() === "di"){
+                            return <div key={index}>{React.createElement(DiIcons[icon], 
+                                {id: `iconProjectType${index}`, className:"projectTypeIcon"})}</div>
+                        }
+                        if(icon.substring(0,2).toLowerCase() === "si"){
+                            return <div key={index}>{React.createElement(SiIcons[icon], 
+                                {id: `iconProjectType${index}`, className:"projectTypeIcon"})}</div>
+                        }
+                        if(icon.substring(0,2).toLowerCase() === "bs"){
+                            return <div key={index}>{React.createElement(BsIcons[icon], 
+                                {id: `iconProjectType${index}`, className:"projectTypeIcon"})}</div>
+                        }
+                        if(icon.substring(0,2).toLowerCase() === "md"){
+                            return <div key={index}>{React.createElement(MdIcons[icon], 
+                                {id: `iconProjectType${index}`, className:"projectTypeIcon"})}</div>
+                        }
+                    })}
                 </div>
             </div>
             <div className={`slidecardCover${index}`} style={{height: "30%"}}

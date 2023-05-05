@@ -1,6 +1,7 @@
 export const listProject = [
     {
         projectName: "KidTalk",
+        projectTypeIcon: ["BsBrowserChrome"],
         projectType: "Full Stack Web Application",
         from: "Jan 2023",
         to: "Apr 2023",
@@ -12,6 +13,7 @@ export const listProject = [
     },
     {
         projectName: "Rehome Pet",
+        projectTypeIcon: ["BsBrowserChrome"],
         projectType: "Full Stack Web Application",
         from: "Sep 2022",
         to: "Dec 2022",
@@ -22,7 +24,20 @@ export const listProject = [
         linkProject: "https://github.com/thienchanh411/ChanhVo-CSIS3380-Project.git"
     },
     {
+        projectName: "We Share",
+        projectTypeIcon: ["MdDraw"],
+        projectType: "UX Design",
+        from: "Sep 2022",
+        to: "Dec 2022",
+        imgProject: "../Weshare-1.png",
+        description: "The group of 3 project is a UX design project that used Justinmind framework to design a UI of mobile application for sharing suitcases.",
+        // technologies: ["React", "Node.js", "MongoDB"],
+        technologies: ["FaFigma", "FaMobileAlt"],
+        linkProject: "https://github.com/thienchanh411/ChanhVo-CSIS3380-Project.git"
+    },
+    {
         projectName: "Realty Rental",
+        projectTypeIcon: ["BsBrowserChrome"],
         projectType: "Full Stack Web Application",
         from: "May 2022",
         to: "Aug 2022",
@@ -32,4 +47,17 @@ export const listProject = [
         technologies: ["FaHtml5", "FaCss3Alt", "DiJqueryLogo", "FaPhp", "DiMysql"],
         linkProject: "https://github.com/thienchanh411/RealtyRental.git"
     },
+    {
+        projectName: "Punch it",
+        projectTypeIcon: ["FaMobileAlt"],
+        projectType: "Mobile Application",
+        from: "Jan 2022",
+        to: "Apr 2022",
+        imgProject: "../Punchit-1.png",
+        description: "The group of 5 project is a mobile application for manage the worked hours, minimum wage, information of employees.",
+        // technologies: ["React", "Node.js", "MongoDB"],
+        technologies: ["DiAndroid", "FaJava", "SiFirebase"],
+        linkProject: "https://github.com/thienchanh411/ChanhVo-CSIS3380-Project.git"
+    },
+
 ]

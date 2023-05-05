@@ -41,6 +41,9 @@ const ListProjects = () => {
                         }
 
                     })}
+                    <div id="cardProjectContainer">
+                        <div id="cardCoverGeneral"></div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -28,6 +28,11 @@ p {
     margin-bottom: 5px;
 }
 
+.projectTypeIcon{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
 /* GENERAL INFORMATION */
 
 #generalInformation{
@@ -96,6 +101,8 @@ p {
     border-radius: 5px;
     background-color: rgb(243, 243, 243);
 }
+
+
 
 
 /* SETUP CARD PROJECTS AT ODD POSITION */
@@ -374,8 +381,8 @@ p {
 
     }
     .iconProjectCard{
-        width: 3rem;
-        height: 3rem;
+        width: 2.5rem;
+        height: 2.5rem;
         padding-top: 7px;
     }
     .iconProjectCardModal{
@@ -439,6 +446,7 @@ p {
         width: 44vw;
         height: 60vw;
         margin-bottom: 1rem;
+        flex-grow: 1;
     }
     .cardCoverGeneral{
         width: 45vw;
@@ -447,6 +455,9 @@ p {
     }
     #listProjectsContainer{
         padding-left: 1rem ;
+        display: flex;
+        flex-flow: row wrap;
+ 
 
     }
 
@@ -542,6 +553,17 @@ p {
 
     }
 
+    .cardCoverGeneral{
+        width: 31vw;
+        height: 46vw;
+        
+    }
+    #cardProjectContainer{
+        width: 32vw;
+        height: 47vw;
+        /* flex: 1; */
+    }
+
     .borderProjectNumber{
         width: 9vw;
         height: 9vw; 
@@ -551,10 +573,10 @@ p {
         height: 7vw;
     }
     .cardCoverGeneral h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .cardCoverGeneral h4 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     .iconProjectCard{
         width: 2.7rem;
@@ -628,20 +650,25 @@ p {
         padding-left: 2rem;
         padding-right: 2rem;
         min-height: 45vw;
+        flex-grow: 1;
     }
     #aboutMeTxt{
         font-size: 2.5rem;
     }
     #listProjectsContainer{
         padding: 0 1rem;
+        display: flex;
+        flex-flow: row wrap;
     }
     .cardCoverGeneral{
         width: 25vw;
         height: 35vw;
+        
     }
     #cardProjectContainer{
-        width: 26vw;
+        width: 25vw;
         height: 36vw;
+        flex: 1;
     }
     .borderProjectNumber{
         width: 5.5vw;
