@@ -38,7 +38,7 @@ const CardProject = ({project, classCard, index}) => {
                     </div>
                     <div id="modalBody" className="modal-body">
                         <div>
-                        <img className="img-fluid" src={project.imgProject} alt="imgProject"/>
+                        <img className="img-fluid" src={process.env.PUBLIC_URL + project.imgProject} alt="imgProject"/>
                         </div>
 
                         <div className="row mt-2">

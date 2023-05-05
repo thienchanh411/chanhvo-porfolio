@@ -31,7 +31,8 @@ const AboutMe = () => {
                         </div>
                         <div className="d-flex justify-content-center col-lg-4 order-1 order-lg-4 ">
                             {/* <div className="row justify-content-center"> */}
-                            <img id="imgAboutMe" src="../Chanh_Hinhthe_JPEG.jpg" alt="avatar" className="rounded"
+                            <img id="imgAboutMe" src={process.env.PUBLIC_URL + '/Chanh_Hinhthe_JPEG.jpg'}
+                            alt="avatar" className="rounded"
                                 style={{ maxHeight: "50vh" }} />
                             {/* </div> */}
                         </div>
