@@ -20,7 +20,6 @@ function App() {
           <ContactMe/>
           <FabIconsBottom/>
           <Footer/>
-
     </div>
   );
 }
