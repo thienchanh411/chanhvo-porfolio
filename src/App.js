@@ -13,9 +13,6 @@ function App() {
   return (
     <div className="App" >
       <NavigationBar/>
-      {/* <div className="row justify-content-center align-items-center" 
-      style={{ minHeight: "90vh", background: "#F8F8F8" }}>
-        <div className="col-9 align-items-center"> */}
           <FabIconsLeftConner />
           <GeneralInfomation />
           <AboutMe />
@@ -23,8 +20,6 @@ function App() {
           <ContactMe/>
           <FabIconsBottom/>
           <Footer/>
-        {/* </div>
-      </div> */}
 
     </div>
   );
