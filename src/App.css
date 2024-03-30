@@ -245,7 +245,7 @@ p {
     padding-top: 7px;
     color: #383d2e;
 }
-#projectDescription{
+#projectDescription, #projectRequirement{
     font-size: 100%;
 }
 #btnShowModalProject{

@@ -1,4 +1,3 @@
-import Project from "./Project";
 import {listProject} from "../data/listProject.js"
 import CardProject from "./CardProject";
 

@@ -3,6 +3,7 @@ import { HashLink} from 'react-router-hash-link';
 import {BiMenu} from "react-icons/bi" 
 import { useState } from 'react';
 import $ from 'jquery'
+import { Link } from 'react-router-dom';
 
 const NavigationBar = () => {
 
@@ -33,11 +34,17 @@ const NavigationBar = () => {
 
           <HashLink className="nav-link text-white" to="/">Home</HashLink>
           <HashLink className="nav-link text-white" to="/#aboutme">About</HashLink>
-          <HashLink className="nav-link text-white" to="/#listprojects">Project</HashLink>
-          {/* <HashLink className="nav-link text-white" to="testimonial">Testimonial</HashLink> */}
+          <HashLink className="nav-link text-white" to="/#listprojects">Projects</HashLink>
+          <Link className="nav-link text-white" 
+                target="_blank"
+                to={`${process.env.PUBLIC_URL}/THIENCHANH_VO_RESUME_SOFTWARE_ENGINEER.pdf`}>
+                  Resume
+          </Link>
           <HashLink className="nav-link text-white" to="/#contactme">Contact</HashLink>
-          
         </Nav>
+        {/* <Routes>
+          <Route></Route>
+        </Routes> */}
       </div>
     </div>
      );

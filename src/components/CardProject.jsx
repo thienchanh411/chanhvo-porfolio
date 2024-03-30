@@ -29,7 +29,7 @@ const CardProject = ({project, classCard, index}) => {
         return (
         <div className="modal show fade" id="exampleModal" tabIndex="-1"
         style={modalStyle}>
-            <div className="modal-dialog">
+            <div className="modal-dialog modal-lg">
                 <div className="modal-content">
                     <div className="modal-header">
                         <h5 className="modal-title" id="exampleModalLabel">{project.projectName}</h5>
@@ -42,15 +42,27 @@ const CardProject = ({project, classCard, index}) => {
                         </div>
 
                         <div className="row mt-2">
-                            <div className="col-6">{project.projectType}</div>
-                            <div className="col-6 text-end">{project.from} {project.to}</div>
+                            <div className="col-6 fs-5"><strong>{project.projectType}</strong></div>
+                            <div className="col-6 fs-5 text-end"><strong>{project.from} {project.to}</strong></div>
+                            
                         </div>
 
                         <div className="row mt-2">
+                            <h5 style={{fontWeight: 600}}>Description:</h5>
                             <p id="projectDescription">{project.description}</p>
                         </div>
                         <div className="row mt-2">
-                            <div className="col">Technologies:</div>
+                            <h5 style={{fontWeight: 600}}>Requirement:</h5>
+                            <p id="projectRequirement">{project.requirement}</p>
+                        </div>
+                        <div className="row mt-2">
+                            <h5 style={{fontWeight: 600}}>Achievements:</h5>
+                            {project.achievements.map((achieve, index) => {
+                                return <li key={index}>{achieve}</li>
+                            })}
+                        </div>
+                        <div className="row mt-2">
+                            <h5 style={{fontWeight: 600}}>Technologies:</h5>
                         </div>
                         <div className="row mt-2 row-cols-3 align-self-bottom text-center">
                             {// eslint-disable-next-line
